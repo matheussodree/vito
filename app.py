@@ -9,9 +9,9 @@ def hello_world():
     return render_template('index.html')
 
 
-@app.route('/qr_fodasse')
-def qr_fodasse():
-    return render_template('qr_fodasse.html')
+@app.route('/imagem/<nome_imagem>')
+def imagem(nome_imagem):
+    return render_template('imagem.html', nome_imagem=nome_imagem)
 
 
 if __name__ == '__main__':

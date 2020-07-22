@@ -2,10 +2,10 @@
 
 {% block body %}
   <div class="vito-content" align="center">
-    <a href="{{ url_for('qr_fodasse') }}" class="btn btn-light p-2">QR FODASSE</a>
+    <a href="{{ url_for('imagem', nome_imagem='vito.jpg') }}" class="btn btn-light p-2">CLICA AQUI FODASSE</a>
   </div>
 
   <div class="vito-content" align="center">
-    <a class="btn btn-light p-2">Qualquer coisa</a>
+    <a href="{{ url_for('imagem', nome_imagem='tio_gui_saudades.jpg') }}" class="btn btn-light p-2">QUALQUER COISA</a>
   </div>
 {% endblock body %}
